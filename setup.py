@@ -2,11 +2,11 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='ekakashi-api',
+    name='ekakashi',
     packages=find_packages(),
     version='v0.1',
     description="Python package for e-kakashi api",
     author='kyon',
-    url='https://github.com/ky0on/ekakashi-api.git',
+    url='https://github.com/ky0on/ekakashi.git',
     classifiers=[],
 )
