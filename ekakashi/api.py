@@ -79,7 +79,7 @@ class api():
 
             df.set_index('datetime', inplace=True)
             df.index = pd.to_datetime(df.index)
-            df.index = df.index.tz_localize('UTC').tz_convert(timezone).tz_localize(None)
+            df.index = df.index.tz_convert(timezone)
             df['snid'] = snid
             df['mj'] = df['solarIrradiance'] * 60 * 10 / 10**6   # solar irradiance in MJ
 
